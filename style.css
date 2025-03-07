@@ -1,0 +1,553 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-padding:60px;
+}
+
+/* The Header */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 12px;
+}
+
+header img{
+    width: 70px;
+}
+
+header span{
+    width: 40px;
+    display: block;
+    height: 3px;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+    top: 0;
+    margin: 6px;
+    
+}
+
+header .second-span{
+    width: 20px;
+    transition: 0.3s ease-in;
+}
+
+header .span-menu:hover .second-span{
+    width: 40px;
+
+
+}
+
+/*  */
+header .pop-menu a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 160px;
+    padding: 15px;
+    background-color: #f6f6f6;
+    margin-top: 3px;
+    transition: 0.3s ease;
+}
+/*  */
+header .pop-menu{
+    position: absolute;
+    top: 70px;
+    right: 25%;
+    visibility: hidden;
+    cursor:pointer ;
+}
+
+header .pop-menu::before{
+    content: "";
+    position: absolute;
+    border: 15px solid #f6f6f6;
+    right: 3px;
+    top: -24px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+
+/* header .pop-menu div{
+    width: 160px;
+    padding: 15px;
+    background-color: #f6f6f6;
+    margin-top: 3px;
+    transition: 0.3s ease;
+   
+} */
+
+header .span-menu:hover  .pop-menu{
+    visibility: visible;
+}
+
+header .pop-menu a:hover{
+    padding-left: 30px;
+}
+
+/* end of header */
+
+
+
+
+/* The Home */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/landing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-text-1{
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #10cab7;
+}
+
+.home-text-2{
+    padding-top: 20px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+/*end of home  */
+
+
+
+
+/* The First Container */
+.feather{
+    background-color: #f6f6f6;
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    display: flex;
+    justify-content: center;
+}
+
+.container-1{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+   
+}
+
+.container-1>div{
+    text-align: center;
+    
+}
+
+.icon i{
+    font-size: 3em;
+    padding-top: 25px;
+
+
+}
+
+.icon-text{
+    padding-top: 25px;
+    font-weight: 900;
+
+}
+
+.icon-para{
+    padding-top: 25px;
+    letter-spacing: 1px;
+    word-break: break-word;
+    line-height: 35px;
+    color: #777;
+
+}
+
+/* end of first container */
+
+
+
+
+/* The Second container */
+.feather.v-2{
+    background-color: #fff ;
+    position: relative;
+    z-index: -1;
+}
+
+.container-2{
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    margin-top: 85px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #79798d;
+    position: relative;
+    width: fit-content;
+    align-self: center;
+    z-index: 1;
+}
+
+.title::before{
+    content: "Services";
+    position: absolute;
+    color: #ebeced;
+    font-size: 5em;
+    font-weight: 800;
+    bottom: -15px;
+    left: -47%;
+    letter-spacing: -5.5px;
+    z-index: -1;
+  
+
+}
+
+
+.content{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+
+.content>div{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.content .pic{
+    padding: 20px;
+    margin-left: 40px;
+    position: relative;
+}
+
+.content .pic::after{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #2c4755;
+    right: 55px;
+    top: -3px;
+    z-index: -1;
+
+}
+
+.content .pic img{
+    width: 255px;
+}
+
+
+.content .con-bulk-build{
+    display: flex;
+    gap: 20px;
+  
+}
+
+.con-bulk-build .con-bulk-head i{
+    font-size: 40px;
+}
+
+.con-bulk-title{
+    padding-bottom: 25px;
+    font-weight: 900;
+}
+
+.con-bulk-para{
+    color: #444;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* end of second container */
+
+
+/* The third container */
+.feather.v-3{
+    position: relative;
+    z-index: -1;
+
+}
+.container-3{
+    width: 1170px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.container-3 .title::before{
+    content: "Portfolio";
+    left: -23%;
+}
+
+.container-3 .content{
+
+    gap: 25px;
+}
+
+.container-3 .card{
+    /* width: calc(90% / 3); */
+    background-color: #fff;
+}
+
+.container-3 .con-bulk-title{
+    padding-bottom: 0px;
+    padding-left: 20px;
+    
+}
+
+.container-3 .con-bulk-para{
+    padding: 20px;
+    padding-top: 5px;
+    color: #79798d;
+}
+
+.container-3 .content>div{
+    gap: 20px;
+}
+
+/* end of third contaier */
+.feather.v-4{
+    background-color: #fff ;
+    position: relative;
+    z-index: -1;
+
+}
+
+.feather.v-4 .title::before{
+    content: "About";
+    
+}
+
+.feather.v-4 .content{
+    justify-content: space-between;
+}
+
+.feather.v-4 .content .con-bulk{
+    
+    width: calc(100% - 500px);
+}
+
+.feather.v-4 .con-bulk-build{
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 27px;
+}
+
+#c-b-b{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-weight: 600;
+}
+
+#c-b-b::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #10cab7;
+    bottom: -10px;
+
+}
+
+#c-b-b-2{
+    color: #79798d;
+}
+
+.feather.v-4 .content .pic::after{
+    background-color: #10cab7;
+}
+
+.feather.v-4 .content .pic::before{
+    content: "";
+    position: absolute;
+    background-color: #10cab7;
+    height: 73px;
+    width: 56%;
+    bottom: 3px;
+    right: -55px;
+    z-index: -1;
+
+}
+
+/* end of fourth container */
+
+
+/* The fifth container */
+.feather.v-5 .container-1{
+    flex-direction: column;
+}
+
+.feather.v-5 .container-1 .content{
+    flex-direction: column;
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+.feather.v-5 .container-1 h2{
+    font-weight: 900;
+    font-size: 2em;
+    letter-spacing: -2px;
+    color: #2c4755;
+    margin-bottom: 15px;
+}
+
+.feather.v-5 .container-1 a {
+    text-decoration: none;
+    color: #10cab7;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.feather.v-5 .container-1 .icons{
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 23px;
+    color: #2c4755;
+    gap: 12px;
+    align-items: center;
+}
+
+.feather.v-5 .container-1 .icons a{
+    text-decoration: none;
+    color: #2c4755;
+    display: block;
+    font-size: 1em;
+}
+
+/* end of fifth container */
+
+
+/* The footer */
+footer .content{
+    padding-top: calc(var(--main-padding) - 25px);
+    padding-bottom: calc(var(--main-padding) - 25px);
+    background-color: #2c4755;
+    color: white;
+    font-weight: 600;
+    word-spacing: 3px;
+}
+
+footer .content span{
+    color: #10cab7;
+    
+}
+
+/* End of footer */
+
+
+@media(max-width:701px){
+    .feather.v-4 .content{
+        flex-direction: column;
+
+    }
+
+    .feather.v-4 .content .pic{
+        margin: 0 auto 25px;
+    }
+
+    .feather.v-4 .content .con-bulk {
+        width: auto;
+        text-align: center;
+    }
+    
+    #c-b-b::before{
+        right: 25%;
+    }
+
+}
+
+@media(max-width:480px){
+
+    body{
+
+        font-size: 13px;
+    }
+    
+    .container-2 {
+        width: auto;
+    }
+
+    .pic::after , 
+    .pic::before{
+        display: none;
+        
+    }
+
+    .content>div{
+        width: 250px;
+    }
+
+    .container-3 .card {
+        margin: auto;
+    }
+
+    .title::before{
+        font-size: 25px;
+        font-weight: 900;
+        bottom: 11px;
+        left: 0;
+        letter-spacing: 4.5px;
+    }
+
+    .container-3 .title::before{
+        content: "Portfolio";
+        left: 0;
+    }
+
+    .content .pic{
+        margin: 25px auto 0;
+    }
+
+    .content .pic img{
+        width: 95%;
+        margin: auto;
+    }
+    
+
+}
+
+@media(max-width:320px){
+    body{
+        font-size: 11px;
+    }
+
+    .content>div{
+        width: 220px;
+    }
+
+    .content .pic img{
+        width: 95%;
+        margin: auto;
+    }
+
+}
+
+
+
+
