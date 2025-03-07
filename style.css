@@ -402,6 +402,10 @@ header .pop-menu a:hover{
     flex-direction: column;
 }
 
+.feather.v-5 .container-1 .title::before{
+    content: "Contact";
+}
+
 .feather.v-5 .container-1 .content{
     flex-direction: column;
     padding-top: var(--main-padding);
